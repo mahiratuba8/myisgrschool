@@ -1,0 +1,97 @@
+html{
+    scroll-behavior:smooth;
+
+}
+body{
+    background-color: rgba(237, 237, 237, 0.795);
+    font-family: Playfair Display;
+}
+.about{
+    background-color: rgb(255,246,228);
+border-radius:0.5rem;
+}
+.card{
+    border-bottom: 8px solidrgb(255,246,228);
+}
+.m-heading{
+    background-color: rgb(234, 198, 222);
+    border-radius: 20px;
+    text-align: center;
+}
+#socialMedia{
+    background-color: rgb(196, 203, 255);
+}
+.medialink{
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1rem;
+    border: 2px dashed;
+    border-radius: 0.5rem;
+}
+.headerfooter{
+    background-color: rgba(174,209,233);
+}
+#section0{
+    height: 600px;
+    color:black ;
+    background-color:rgb(255,246,228);
+    
+}
+#section1{
+    
+    height: 650px;
+    color:black ;
+    background-color: rgba(174,209,233);
+    
+}
+#section2{
+   
+    height: 650px;
+    color:black ;
+    background-color:rgb(255,246,228);
+}
+#section0, #section1, #section2 {
+    margin: 0;
+    padding: 0;
+}
+#image0{
+    height: 300px;
+    box-shadow: 9px 9px rgba(174,209,233);
+    margin-top:0px;
+    margin-right: 10%;
+}
+#introbox{
+    width: 800px;
+    padding: 20px 20px 20px 10px;
+    border:5px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: larger;
+
+}    
+#box{
+    background-color:rgb(255,246,228) ;
+border-radius: 10px;
+}
+#imagebox{
+    box-shadow: 0px 4px 10px rgb(151, 150, 150);
+    
+}
+#isgrimg{
+    height: 185px;
+    box-shadow: 9px 9px rgba(174,209,233);
+    margin-top:20px;
+    margin-left: 1%;
+    align-items: center;
+}
+.isgrcommunity{
+    margin-top: 12px;
+}
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+}

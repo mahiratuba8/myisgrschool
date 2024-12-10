@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="Login.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+        rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="validation(event)">
+        <fieldset class="userid"> 
+          <legend>Log In</legend>
+          <label>Email:</label> 
+          <input type="text" id="email"  placeholder="Email"> 
+          <br>
+          <br>
+          <label>Create Password:</label>
+          <input type="password" id="password"  placeholder="Password">
+          <br>
+          <br>
+          
+          <label>Gender:</label>
+          <input type="radio" id="female" value="female" name="Gender">
+          <label>Female</label>
+          <input type="radio" id="male" value="male" name="Gender">
+          <label>Male</label><br> <br>
+          <label>Select You're Grade:</label>
+          <select name:grade id="grade">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+          </select>
+          <br>
+          <br>
+          <div class="progress" style="height:20px;">
+            <div  class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+            10%
+            </div>
+        </div>
+          <br>
+              <button type="submit" class="btn btn-outline-info">
+               Submit 
+               
+            </button>
+      </form>
+      <div id="error">
+
+      </div>
+    </form>
+    </div>
+
+    <script src="Login.js"> </script>
+</body>
+</html>

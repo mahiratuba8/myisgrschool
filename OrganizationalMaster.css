@@ -47,3 +47,18 @@ body{
     font-size:20px;
 
 }
+.container1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.container1 .text {
+    width: 50%;
+}
+.container1 .image {
+    width: 50%;
+}
+.container1 img {
+    max-width: 100%;
+    height: auto;
+}

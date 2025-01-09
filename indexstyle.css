@@ -33,27 +33,30 @@ border-radius:0.5rem;
     background-color: rgba(174,209,233);
 }
 #section0{
-    height: 600px;
+    width: auto;
+    height: auto;
+    padding: 20px;
     color:black ;
     background-color:rgb(255,246,228);
     
 }
 #section1{
-    
-    height: 650px;
+    width: auto;
+    height: auto;
+    padding: 20px;
     color:black ;
     background-color: rgba(174,209,233);
     
 }
 #section2{
-   
-    height: 650px;
+    width: auto;
+    height: auto;
+    padding: 20px;
     color:black ;
     background-color:rgb(255,246,228);
 }
 #section0, #section1, #section2 {
     margin: 0;
-    padding: 0;
 }
 #image0{
     height: 300px;
@@ -63,7 +66,6 @@ border-radius:0.5rem;
     
 }
 #introbox{
-    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -72,7 +74,7 @@ border-radius:0.5rem;
 }    
 #box{
     background-color:rgb(255,246,228) ;
-border-radius: 10px;
+    border-radius: 10px;
 }
 #imagebox{
     box-shadow: 0px 4px 10px rgb(151, 150, 150);

@@ -3,7 +3,7 @@ html{
 
 }
 body{
-    background-color: rgba(237, 237, 237, 0.795);
+    background-color:rgb(255,246,228);
     font-family: Playfair Display;
 }
 
@@ -13,31 +13,34 @@ body{
     background-color: rgba(174,209,233);
 }
 #section0{
-    height: 600px;
+    width: auto;
+    height: auto;
+    padding:20px ;
     color:black ;
     background-color:rgb(255,246,228);
     
 }
 #section1{
     
-    height: 650px;
+    width: auto;
+    height: auto;
+    padding:20px ;
     color:black ;
     background-color: rgba(174,209,233);
     
 }
 #section2{
-   
-    height: 650px;
+   width: auto;
+    height: auto;
+    padding:20px ;
     color:black ;
     background-color:rgb(255,246,228);
 }
 #section0, #section1, #section2 {
     margin: 0;
-    padding: 0;
 }
 
 #introText{
-    padding:10px;
     display:flex;
     align-items:center;
     justify-content:space-between;

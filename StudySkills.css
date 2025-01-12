@@ -1,0 +1,47 @@
+html{
+    scroll-behavior:smooth;
+
+}
+body{
+    background-color: rgba(237, 237, 237, 0.795);
+    font-family: Playfair Display;
+}
+
+
+
+.headerfooter{
+    background-color: rgba(174,209,233);
+}
+#section0{
+    width: auto;
+    height: auto;
+    padding:20px ;
+    background-color:rgb(255,246,228);
+    
+}
+#section1{
+    
+    width: auto;
+    height: auto;
+    padding:20px ;
+    background-color: rgba(174,209,233);
+    
+}
+#section2{
+   
+    width: auto;
+    height: auto;
+    padding:20px ;
+    background-color:rgb(255,246,228);
+}
+#section3{
+    
+    width: auto;
+    height: auto;
+    padding:20px ;
+    background-color: rgba(174,209,233);
+    
+}
+#section0, #section1, #section2,#section3 {
+    margin: 0;
+}

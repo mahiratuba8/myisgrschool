@@ -42,7 +42,7 @@ body{
     background-color: rgba(174,209,233);
     
 }
-#section0, #section1, #section2,#section3 {
+#section0, #section1, #section2, #section3{
     margin: 0;
 }
 .cite {
@@ -60,5 +60,6 @@ body{
     max-width: 100%;
     height: auto;
 }
+
 
 

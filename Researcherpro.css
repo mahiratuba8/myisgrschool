@@ -74,3 +74,26 @@ ul, li{
 ul{
     font-weight: bold;
 }
+
+.faq-container {
+    width: auto;
+    max-width:1000px;
+    
+}
+.faq-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.faq-question {
+    padding: 15px;
+    background-color: rgba(174, 209, 233, 0.741);
+    cursor: pointer;
+    font-weight: bold;
+}
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: rgba(194, 219, 235, 0.452);
+}

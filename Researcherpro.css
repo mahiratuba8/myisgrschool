@@ -60,6 +60,17 @@ body{
     max-width: 100%;
     height: auto;
 }
+.image2{
+    margin: auto;
+    border-radius:700px;
+}
 
-
-
+h3, h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul, li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+ul{
+    font-weight: bold;
+}

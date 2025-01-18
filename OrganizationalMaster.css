@@ -44,7 +44,7 @@ body{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    font-size:20px;
+    font-size:auto;
 
 }
 .container1 {
@@ -61,4 +61,13 @@ body{
 .container1 img {
     max-width: 100%;
     height: auto;
+}
+h3, h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul, li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+ul{
+    font-weight: bold;
 }

@@ -97,3 +97,12 @@ border-radius:0.5rem;
     padding: 0px;
     
 }
+h3, h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul, li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+ul{
+    font-weight: bold;
+}

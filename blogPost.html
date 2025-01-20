@@ -1,182 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Sharing Page</title>
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <!-- My CSS -->
+  <link rel="stylesheet" href="blogPost.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/996973c893.js"></script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
+    .mycolor {
+      background-color: rgba(174, 209, 233);
+      color: rgb(107, 106, 106);
     }
 
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      display: none;
-    }
-
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    .form-group label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .form-group textarea {
-      height: 100px;
-    }
-
-    .form-group input[type="file"] {
-      border: none;
-    }
-
-    .add-post {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #007bff;
-      color: white;
-      width: 50px;
-      height: 50px;
-      border: none;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-    }
-
-    .add-post:hover {
-      background-color: #0056b3;
-    }
-
-    .post-container {
-      margin: 20px;
-    }
-
-    .post {
-      background: #fff;
-      margin-bottom: 20px;
-      padding: 15px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-
-    .post h3 {
-      margin-top: 0;
-    }
-
-    .post img {
-      max-width: 100%;
-      border-radius: 5px;
+    .mycolor1 {
+      color: rgb(107, 106, 106);
     }
   </style>
 </head>
+
 <body>
-  <div class="post-container" id="post-container">
-    <!-- Posts will be displayed here -->
+  <div id="wholething">
+    <nav class="navbar mycolor">
+      <div class="container">
+        <a class="navbar-brand mycolor1" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="text-info bi bi-feather" viewBox="0 0 16 16">
+            <path
+              d="M15.807.531c-.174-.177-.41-.289-.64-.363a3.8 3.8 0 0 0-.833-.15c-.62-.049-1.394 0-2.252.175C10.365.545 8.264 1.415 6.315 3.1S3.147 6.824 2.557 8.523c-.294.847-.44 1.634-.429 2.268.005.316.05.62.154.88q.025.061.056.122A68 68 0 0 0 .08 15.198a.53.53 0 0 0 .157.72.504.504 0 0 0 .705-.16 68 68 0 0 1 2.158-3.26c.285.141.616.195.958.182.513-.02 1.098-.188 1.723-.49 1.25-.605 2.744-1.787 4.303-3.642l1.518-1.55a.53.53 0 0 0 0-.739l-.729-.744 1.311.209a.5.5 0 0 0 .443-.15l.663-.684c.663-.68 1.292-1.325 1.763-1.892.314-.378.585-.752.754-1.107.163-.345.278-.773.112-1.188a.5.5 0 0 0-.112-.172M3.733 11.62C5.385 9.374 7.24 7.215 9.309 5.394l1.21 1.234-1.171 1.196-.027.03c-1.5 1.789-2.891 2.867-3.977 3.393-.544.263-.99.378-1.324.39a1.3 1.3 0 0 1-.287-.018Zm6.769-7.22c1.31-1.028 2.7-1.914 4.172-2.6a7 7 0 0 1-.4.523c-.442.533-1.028 1.134-1.681 1.804l-.51.524zm3.346-3.357C9.594 3.147 6.045 6.8 3.149 10.678c.007-.464.121-1.086.37-1.806.533-1.535 1.65-3.415 3.455-4.976 1.807-1.561 3.746-2.36 5.31-2.68a8 8 0 0 1 1.564-.173" />
+          </svg>
+          SCHOOLER
+
+        </a>
+        <button type="button" class="btn btn-outline-info"><a href="Login.html" class="nav-link active">Log
+            In</a></button>
+        <button type="button" class="btn btn-outline-info"><a href="about.html" class="nav-link active">About
+            Us</a></button>
+
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mine"
+          aria-controls="mine" aria-expanded="false" aria-label="toggle navagation">
+          <span class="navbar-toggler-icon">
+
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="mine">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home Page</a>
+            </li>
+            <li class="nav-item">
+              <a href="ResearcherPro.html" class="nav-link">Researcher Pro</a>
+            </li>
+            <li class="nav-item">
+              <a href="OrganizationMaster.html" class="nav-link">Organization Master</a>
+            </li>
+            <li class="nav-item">
+              <a href="StudySkills.html" class="nav-link">Study Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="blogPost.html" class="nav-link">ISGR Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+    <div id="section0">
+      <div class="" id="introbox">
+        <p>
+          Hi there! Welcome to <strong><em>Schooler<abbr title="International School of Gothenburg Regoin">
+                ISGR</abbr></em></strong>. My name is Mahira Khan, I'm a student just like you,
+          and I've created this website knowing how challenging it can be to find reliable resources,
+          guidance,
+          and insight
+          on how you can be a better student. That is why I have created this space to share my own
+          experiences
+          and to make
+          the journey easier for all student here especially for the new.
+          I hope you find the information here helpful and relevant to your own experiences.
+        </p>
+
+      </div>
+    </div>
+    <div id="section1">
+      <h3 class="ffsyek">
+Feel Free to Share You're Experiences and Knowledge
+      </h3>
+      <div>
+        <div class="post-container" id="post-container">
+
+        </div>
+
+        <div class="container" id="form-container">
+          <h2>Create a Post</h2>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="class">Class</label>
+            <input type="text" id="class" placeholder="Enter your class">
+          </div>
+          <div class="form-group">
+            <label for="grade">Grade</label>
+            <input type="text" id="grade" placeholder="Enter your grade">
+          </div>
+          <div class="form-group">
+            <label for="experience">Experience</label>
+            <textarea id="experience" placeholder="Share your experience..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="image">Upload Image</label>
+            <input type="file" id="image">
+          </div>
+          <button onclick="addPost()">Post</button>
+          <button onclick="toggleForm()">Cancel</button>
+        </div>
+
+        <button class="add-post" onclick="toggleForm()">+</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <footer class="text-muted text-center py-3 headerfooter">
+    <h5>
+      Copyright &copy ; 2024|
+    </h5>
+    <a class="text-info text-decoration-none">
+      All rights reserved by Mahira Khan
+    </a>
+
+  </footer>
+  </div>
+  </div>
   </div>
 
-  <div class="container" id="form-container">
-    <h2>Create a Post</h2>
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Enter your name">
-    </div>
-    <div class="form-group">
-      <label for="class">Class</label>
-      <input type="text" id="class" placeholder="Enter your class">
-    </div>
-    <div class="form-group">
-      <label for="grade">Grade</label>
-      <input type="text" id="grade" placeholder="Enter your grade">
-    </div>
-    <div class="form-group">
-      <label for="experience">Experience</label>
-      <textarea id="experience" placeholder="Share your experience..."></textarea>
-    </div>
-    <div class="form-group">
-      <label for="image">Upload Image</label>
-      <input type="file" id="image">
-    </div>
-    <button onclick="addPost()">Post</button>
-    <button onclick="toggleForm()">Cancel</button>
-  </div>
-
-  <button class="add-post" onclick="toggleForm()">+</button>
-
-  <script>
-    function addPost() {
-      const name = document.getElementById('name').value;
-      const userClass = document.getElementById('class').value;
-      const grade = document.getElementById('grade').value;
-      const experience = document.getElementById('experience').value;
-      const imageInput = document.getElementById('image');
-
-      if (!name || !userClass || !grade || !experience) {
-        alert('Please fill in all fields!');
-        return;
-      }
-
-      const postContainer = document.getElementById('post-container');
-
-      const postDiv = document.createElement('div');
-      postDiv.classList.add('post');
-
-      const postContent = `
-        <h3>${name} (Class: ${userClass}, Grade: ${grade})</h3>
-        <p>${experience}</p>
-      `;
-
-      postDiv.innerHTML = postContent;
-
-      if (imageInput.files.length > 0) {
-        const imageFile = imageInput.files[0];
-        const reader = new FileReader();
-        reader.onload = function (e) {
-          const img = document.createElement('img');
-          img.src = e.target.result;
-          postDiv.appendChild(img);
-        };
-        reader.readAsDataURL(imageFile);
-      }
-
-      postContainer.appendChild(postDiv);
-
-      // Clear inputs
-      document.getElementById('name').value = '';
-      document.getElementById('class').value = '';
-      document.getElementById('grade').value = '';
-      document.getElementById('experience').value = '';
-      document.getElementById('image').value = '';
-
-      toggleForm();
-    }
-
-    function toggleForm() {
-      const formContainer = document.getElementById('form-container');
-      formContainer.style.display = formContainer.style.display === 'block' ? 'none' : 'block';
-    }
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="blogPost.js">
   </script>
 </body>
+
 </html>

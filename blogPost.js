@@ -7,21 +7,21 @@
   function addPost() {
     const name = document.getElementById('name').value;
     const userClass = document.getElementById('class').value;
-    const grade = document.getElementById('grade').value;
+    const Topic = document.getElementById('Topic').value;
     const experience = document.getElementById('experience').value;
     const imageInput = document.getElementById('image');
 
-    if (!name || !userClass || !grade || !experience) {
+    if (!name || !userClass || !Topic || !experience) {
       alert('Please fill in all fields!');
       return;
     }
-
+grade
     const postContainer = document.getElementById('post-container');
 
     const post = {
       name,
       userClass,
-      grade,
+      Topic,
       experience,
       image: null
     };
@@ -43,7 +43,7 @@
     // Clear inputs
     document.getElementById('name').value = '';
     document.getElementById('class').value = '';
-    document.getElementById('grade').value = '';
+    document.getElementById('Topic').value = '';
     document.getElementById('experience').value = '';
     document.getElementById('image').value = '';
 
@@ -68,7 +68,7 @@
     postDiv.classList.add('post');
 
     const postContent = `
-      <h3>${post.name} (Class: ${post.userClass}, Grade: ${post.grade})</h3>
+      <h3>${post.name} (Class: ${post.userClass}, topic: ${post.Topic})</h3>
       <p>${post.experience}</p>
     `;
 

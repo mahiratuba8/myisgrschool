@@ -46,7 +46,7 @@ border-radius:0.5rem;
     padding: 20px;
     color:black ;
     background-color:rgba(174,209,233);
-    
+    position: relative;
 }
 .ffsyek{
    background-color: rgb(255,246,228) ;
@@ -92,7 +92,7 @@ h3, h5{
 
   #section1 .container {
     background:rgb(247, 243, 236);
-    padding: auto;
+    padding: 20px;
     border-radius: 8px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: none;
@@ -125,7 +125,7 @@ h3, h5{
   }
 
   .add-post {
-    position: fixed;
+    position: absolute;
     bottom: 20px;
     right: 20px;
     background-color: #007bff;

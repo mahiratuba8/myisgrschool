@@ -15,7 +15,7 @@
       alert('Please fill in all fields!');
       return;
     }
-grade
+
     const postContainer = document.getElementById('post-container');
 
     const post = {

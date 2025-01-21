@@ -110,17 +110,5 @@ ul{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.popup-overlay{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgb(235, 231, 224);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 10px grey;
-    z-index: 1000;
-}
+
 

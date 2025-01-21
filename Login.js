@@ -32,7 +32,6 @@ function validation(E){
     }
     else{
         err="log in successful";
-        localStorage.setItem('LoggedIn', 'true');
         window.location.href="index.html"
         error.style.color="green"   
         return true;

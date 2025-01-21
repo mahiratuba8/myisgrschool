@@ -31,10 +31,10 @@ function validation(E){
         error.style.backgroundColor="orange"
     }
     else{
-        err="log in successful"
+        err="log in successful";
+        localStorage.setItem('LoggedIn', 'true');
         window.location.href="index.html"
-        error.style.color="green"
-        
+        error.style.color="green"   
         return true;
     }
     error.innerText=err

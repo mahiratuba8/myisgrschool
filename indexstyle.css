@@ -6,6 +6,7 @@ html{
 body{
     background-color: rgba(237, 237, 237, 0.795);
     font-family: Playfair Display;
+    height: 100%;
 }
 .about{
     background-color: rgb(255,246,228);
